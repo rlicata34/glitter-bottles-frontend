@@ -1,0 +1,9 @@
+.page {
+  background-color: aquamarine;
+}
+
+.page__content {
+  max-width: 1440px;
+  padding: 0;
+  margin: 0 auto;
+}
