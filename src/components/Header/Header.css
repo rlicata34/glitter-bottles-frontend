@@ -1,11 +1,23 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: rgb(211, 164, 107);
+}
+
+.header__container {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: bisque;
+  padding: 10px 0;
+  margin: 0 auto;
 }
 
 .header__title {
+  margin: 0;
+  padding-left: 20px;
   margin: 0;
 }
 
@@ -13,14 +25,37 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  padding-right: 20px;
 }
 
 .nav__link {
   color: #000;
   text-decoration: none;
   font-size: 20px;
+  display: flex;
+  position: relative;
 }
 
 .nav__link:hover {
   color: #fff;
+}
+
+.nav__icon {
+  width: 20px;
+}
+
+.nav__badge {
+  position: absolute;
+  background: #e63946;
+  top: -6px;
+  right: -10px;
+  border-radius: 50%;
+  min-width: 16px;
+  height: 16px;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
 }

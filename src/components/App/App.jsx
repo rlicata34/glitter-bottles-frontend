@@ -6,10 +6,16 @@ import { galleryImages } from "../../utils/constants";
 import "./App.css";
 
 function App() {
+  const [cartCount, setCartCount] = useState(0);
+
+  const handleCartCount = () => {
+    setCartCount((prev) => prev + 1);
+  };
+
   return (
     <div className="page">
       <div className="page__content">
-        <Header />
+        <Header cartCount={cartCount} />
         <main className="main">
           <section className="home">
             <h1 className="home__title">Welcome to my Site</h1>
@@ -29,7 +35,10 @@ function App() {
                       className="gallery-card__image"
                     />
                     <p className="gallery-card__text">{galleryImage.price}</p>
-                    <button className="gallery-card__button">
+                    <button
+                      className="gallery-card__button"
+                      onClick={handleCartCount}
+                    >
                       Add to Cart
                     </button>
                   </li>
