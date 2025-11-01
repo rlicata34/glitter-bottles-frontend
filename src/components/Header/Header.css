@@ -4,15 +4,15 @@
   left: 0;
   z-index: 999;
   width: 100%;
-  background-color: rgb(211, 164, 107);
 }
 
 .header__container {
   max-width: 1440px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: rgb(233, 91, 15);
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: rgb(211, 164, 107);
 }
 
 .header__title {

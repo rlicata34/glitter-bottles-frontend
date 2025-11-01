@@ -1,4 +1,6 @@
 .page {
+  min-height: 100vh;
+  background-color: rgb(231, 230, 230);
 }
 
 .page__content {
