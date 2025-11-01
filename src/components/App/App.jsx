@@ -20,7 +20,10 @@ function App() {
         <main className="main">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
+            <Route
+              path="/shop"
+              element={<Shop handleCartCount={handleCartCount} />}
+            />
           </Routes>
         </main>
       </div>

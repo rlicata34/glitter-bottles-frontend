@@ -1,7 +1,7 @@
 import { galleryImages } from "../../utils/constants";
 import "./Shop.css";
 
-function Shop() {
+function Shop({ handleCartCount }) {
   return (
     <section className="shop">
       <h1 className="shop__title">Browse the Collection</h1>
@@ -16,7 +16,13 @@ function Shop() {
                 className="gallery-card__image"
               />
               <p className="gallery-card__text">{galleryImage.price}</p>
-              <button className="gallery-card__button">Add to Cart</button>
+              <button
+                type="button"
+                className="gallery-card__button"
+                onClick={handleCartCount}
+              >
+                Add to Cart
+              </button>
             </li>
           );
         })}

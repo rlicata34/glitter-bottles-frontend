@@ -6,7 +6,7 @@
 
 .shop__title {
   font-size: 48px;
-  margin: 50px auto;
+  margin: 100px auto 50px;
 }
 
 .shop__gallery {
@@ -14,7 +14,7 @@
   grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
   justify-content: center;
   gap: 30px;
-  margin: 0;
+  margin: 0 0 50px;
   padding: 0;
 }
 
@@ -35,6 +35,7 @@
 
 .gallery-card__image {
   max-width: 300px;
+  height: 400px;
 }
 
 .gallery-card__text {
